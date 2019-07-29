@@ -13,6 +13,14 @@
     <footer>JavaScript Samples</footer>
     <script>
         console.log(document.getElementById('choice'));
+        // document.getElementById(id명) 특정 id의 요소를 가져온다.
+        // js는 알파벳 대문자, 소문자를 구분하므로 주의
+        document.getElementById('choice').textContent = new Date(); 
+        // document.getElementById(id명).textContent = 변경하고 싶은 문자열
+        // new Date() = 현재 일시를 가져오는 기능
+        console.log(document.getElementById('choice').textContent);
+        // OO 객체의 AA는 &&이다 (프로퍼티: 해당 객체의 상태)
+        // textContent는 가져온 요소의 '콘텐츠'를 나타내는 프로퍼티이다. Element 객체의 프로퍼티 중 하나.
     </script>
 </body>
 </html>
