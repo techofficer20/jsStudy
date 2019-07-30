@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <footer>JavaScript Samples</footer>
+    <script>
+        var hour = new Date().getHours();
+
+        if(hour >= 19 && hour < 21)
+        {
+            window.alert('도시락 30% 할인!');
+        }
+        else if(hour === 9 || hour === 15)
+        {
+            window.alert('도시락 하나 사면 하나 공짜!');
+        }
+        else
+        {
+            window.alert('도시락 사세요');
+        }
+    </script>
+</body>
+</html>
