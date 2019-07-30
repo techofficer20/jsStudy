@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <footer>JavaScript Samples</footer>
+    <section>
+        <table>
+            <tr>
+                <td id = "title"></td>
+                <td id = "price"></td>
+                <td id = "stock"></td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        // 객체:여러 프로퍼티를 가지고 있는 데이터의 집합
+        var jsbook = {title: '자바스크립트 입문', price: 2500, stock: 3}; // title 프로퍼티, price 프로퍼티, stock 프로퍼티
+        console.log(jsbook);
+        console.log(jsbook.title);
+        console.log(jsbook['price']);
+        jsbook.sotck = 10;
+        console.log(jsbook.stock);
+        /* 
+        for..in: 객체의 프로퍼티를 모두 읽어 내기 위한 전용 반복문
+        for(var 프로퍼티를 저장해 두는 변수명 in 객체명)
+        { 처리 내용 }
+        */
+        document.getElementById('title').textContent = jsbook.title;
+        document.getElementById('price').textContent = jsbook.price + '원';
+        document.getElementById('stock').textContent = jsbook.stock;
+        // 데이터를 세로로 입력하고 싶은 경우엔 배열이 적합 (ex: 물건 목록)
+        // 데이터를 가로로 나열하고 싶은 경우엔 객체가 적합 (ex: 특정 상품의 가격과 재고 수)
+    </script>
+</body>
+</html>
