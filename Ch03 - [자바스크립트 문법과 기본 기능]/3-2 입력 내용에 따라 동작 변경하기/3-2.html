@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // prompt: 사용자가 입력한 텍스트를 반환하는 것 (window 객체의 메서드)
+        var answer = window.prompt('도움말을 보시겠습니까?'); // 변수 선언은 let으로 하는 것으로 하자. (중복 검사 가능함)
+        console.log(answer); // 입력한 것이 출력됨 
+        if(answer === 'yes')
+        {
+            window.alert('탭키로 점프해서 장애물을 피합니다.');
+        }
+    </script>
+</body>
+</html>
