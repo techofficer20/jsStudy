@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <footer>JavaScript Samples</footer>
+    <section>
+        <p id = "output"></p>
+    </section>
+    <script>
+        var total = function(price)
+        {
+            var tax = 0.08;
+            return price + price * tax;
+        }
+        console.log('커피 기계의 가격은 ' + total(8000) + '원(부가세 포함)입니다.'); // 함수는 호출 전 정의해야 함
+        document.getElementById('output').textContent = '커피 기계의 가격은 ' + total(8000) + '원(부가세 포함)입니다.';
+    </script>
+</body>
+</html>
