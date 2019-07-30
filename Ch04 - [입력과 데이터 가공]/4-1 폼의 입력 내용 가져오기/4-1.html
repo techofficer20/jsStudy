@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action = "#" id = "form">
+            <input type = "submit" value = "검색">
+        </form>
+    </section>
+    <footer>JavaScript Samples</footer>
+    <script>
+        document.getElementById('form').onsubmit = function()
+        {
+            console.log('클릭했습니다');
+        };
+        /*
+        요소에 이벤트 설정하기
+        취득한 요소.onsubmit = function() {
+            처리 내용
+        };
+        onsubmit 이벤트는 클릭한 전송 버튼 (<input type = "submit">)이 아닌 부모 요소
+        <form>에서 발생한다. 따라서 형식의 '취득한 요소' 부분은 <form> 요소를 가져오도록 프로그램을 작성해야 한다.
+        */
+    </script>
+</body>
+</html>
