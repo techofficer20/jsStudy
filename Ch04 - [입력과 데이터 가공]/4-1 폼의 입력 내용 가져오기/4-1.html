@@ -9,14 +9,19 @@
 <body>
     <section>
         <form action = "#" id = "form">
+            <input type = "text" name = "word"> <!-- name 속성 값은 입력한 데이터가 서버에 전송될 때 데이터의 이름으로 사용됨 -->
             <input type = "submit" value = "검색">
         </form>
+        <p id = "output"></p>
     </section>
     <footer>JavaScript Samples</footer>
     <script>
         document.getElementById('form').onsubmit = function()
         {
-            console.log('클릭했습니다');
+            // console.log('클릭했습니다');
+            var search = document.getElementById('form').word.value;
+            document.getElementById('output').textContent = search + '검색 중...';
+            return false;
         };
         /*
         요소에 이벤트 설정하기
