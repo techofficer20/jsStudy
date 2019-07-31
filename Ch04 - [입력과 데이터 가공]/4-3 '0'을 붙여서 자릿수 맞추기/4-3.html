@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Standards Revival MP3</h2>
+        <div id = "list"></div>
+    </section>
+    <footer>JavaScript Samples</footer>
+    <script>
+        var addZero = function(num, digit)
+        {
+            var numString = String(num); // () 안의 매개변수로 지정한 데이터를 문자열 데이터로 변환함 (문자열 연결 가능)
+            while(numString.length < digit)
+            {
+                numString = '0' + numString;
+            }
+            return numString;
+        }
+        console.log(addZero(1, 2));
+        var songs = [
+            'Stella By Starlight',
+            'Stain Doll',
+            'Caravan',
+            'Besame Mycho',
+            'My Favorite Things',
+            'Taking A Chance On Love',
+            'Fly Me To The Moon',
+            'Waltz For Debby',
+            'Willow Weep For Me',
+            'Bluesette'
+        ];
+        for(var i = 0; i < songs.length; i++)
+        {
+            var paragraph = document.createElement('p');
+            paragraph.textContent = addZero(i + 1, 2) + '. ' + songs[i];
+            document.getElementById('list').appendChild(paragraph);
+        }
+    </script>
+</body>
+</html>
